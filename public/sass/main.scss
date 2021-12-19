@@ -4,6 +4,11 @@ $warning: #eea236;
 $info: #46b8da;
 $backdrop: #42424281;
 $primary: #2e6da4;
+* {
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;1,100;1,300&display=swap');
+    font-family: 'Montserrat', sans-serif;
+}
+
 .success {
     background-color: $success;
     color: #fff;
@@ -37,9 +42,25 @@ body {
 #video-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, 300px);
+    justify-items: center;
+    align-items: center;
     justify-content: center;
     grid-auto-rows: 300px;
     background-color: $backdrop;
+    padding: 20px;
+}
+
+#disconnected {
+    //center text to the screen
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    background-color: $backdrop;
+    height: 100%;
+    max-height: 100%;
+    max-height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 video {
@@ -59,4 +80,5 @@ video {
     width: 100%;
     height: 100px;
     background-color: $backdrop;
+    display: flex;
 }

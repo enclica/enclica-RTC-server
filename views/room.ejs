@@ -7,7 +7,7 @@
     <script>
         const ROOM_ID = "<%= roomId %>"
     </script>
-    <script defer src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+    <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
     <script src="/socket.io/socket.io.js" defer></script>
     <script src="index.js" defer></script>
     <title>Enclica CALL</title>
@@ -17,11 +17,18 @@
 </head>
 
 <body>
+
+    <div id="disconnected">
+        <h3>Call disconnected.</h3>
+        <p>You may now close this window.</p>
+    </div>
+
     <div id='video-grid'></div>
 
-    <div class="bottom">
-
-        <button class="btn primary" onclick="endcall();" />end call</button>
+    <div class="bottom" id="buttons">
+        <button class="btn danger" id="end" />end call</button>
+        <button class="btn primary" id="mute" />mute audio</button>
+        <button class="btn primary" id="stop-video">stop video</button>
     </div>
 </body>
 

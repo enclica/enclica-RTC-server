@@ -23,6 +23,8 @@
         "node-sass": "^7.0.0",
         "node-sass-middleware": "^0.11.0",
         "nodemon": "^2.0.15",
+        "peer": "^0.6.1",
+        "peerjs": "^1.3.2",
         "sass": "^1.45.0",
         "save": "^2.4.0",
         "socket.io": "^4.4.0",
