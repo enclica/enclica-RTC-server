@@ -1,0 +1,35 @@
+{
+    "name": "enclica-rtc-server",
+    "version": "1.0.0",
+    "description": "RTC server for Enclica Messenger.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "devStart": "nodemon index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/enclica/enclica-RTC-server.git"
+    },
+    "author": "Enclica Software",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/enclica/enclica-RTC-server/issues"
+    },
+    "homepage": "https://github.com/enclica/enclica-RTC-server#readme",
+    "dependencies": {
+        "ejs": "^3.1.6",
+        "express": "^4.17.2",
+        "node-sass": "^7.0.0",
+        "node-sass-middleware": "^0.11.0",
+        "nodemon": "^2.0.15",
+        "sass": "^1.45.0",
+        "save": "^2.4.0",
+        "socket.io": "^4.4.0",
+        "uuid": "^8.3.2",
+        "wrtc": "^0.4.7"
+    },
+    "devDependencies": {
+        "socketio-live-reload": "^1.0.4"
+    }
+}
